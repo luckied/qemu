@@ -72,11 +72,11 @@ Missing devices
 Boot options
 ------------
 
-The Aspeed machines can be started using the -kernel option to load a
+The Aspeed machines can be started using the ``-kernel`` option to load a
 Linux kernel or from a firmware image which can be downloaded from the
-OpenPOWER jenkins :
+OpenBMC jenkins :
 
-   https://openpower.xyz/
+   https://jenkins.openbmc.org/job/ci-openbmc/lastSuccessfulBuild/distro=ubuntu,label=docker-builder
 
 The image should be attached as an MTD drive. Run :
 

@@ -30,6 +30,7 @@
 #include "hw/usb/hcd-ehci.h"
 #include "qom/object.h"
 #include "hw/misc/aspeed_pwm.h"
+#include "hw/misc/aspeed_hace.h"
 #include "hw/misc/aspeed_lpc.h"
 #include "hw/misc/aspeed_ibt.h"
 #include "hw/fsi/aspeed-apb2opb.h"
@@ -69,6 +70,7 @@ struct AspeedSoCState {
     AspeedSDHCIState sdhci;
     AspeedSDHCIState emmc;
     AspeedPWMState pwm;
+    AspeedHACEState hace;
     AspeedLPCState lpc;
     AspeedIBTState ibt;
     AspeedAPB2OPBState fsi[2];
@@ -144,6 +146,7 @@ enum {
     ASPEED_DEV_EMMC,
     ASPEED_DEV_FSI1,
     ASPEED_DEV_FSI2,
+    ASPEED_DEV_HACE,
 };
 
 #endif /* ASPEED_SOC_H */
